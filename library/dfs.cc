@@ -1,8 +1,8 @@
 template<typename T>
 void dfs(T source, vector<T> graph[], vector<bool> visited) {
     visited[source] = true;
-    for (T i : graph[source]) {
-        if (!vis[child]) {
+    for (T child : graph[source]) {
+        if (!visited[child]) {
             dfs(child, graph, visited);
         }
     }

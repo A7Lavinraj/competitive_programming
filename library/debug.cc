@@ -1,4 +1,15 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <list>
+#include <array>
+#include <set>
+#include <queue>
+#include <deque>
+#include <stack>
+#include <map>
+#include <utility>
+#include <iterator>
 using namespace std;
 
 void DBG(int x) {cerr << x;}

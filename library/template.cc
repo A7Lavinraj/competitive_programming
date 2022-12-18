@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
+using namespace std;
 #ifdef LAVIN_DEBUG
 #include "/home/a7lavinraj/CARRIER_BUNDLE/cp/library/debug.cc"
 #else
 #define dbg(x...)
 #endif
-using namespace std;
 
 // Alias
 #define ll long long
