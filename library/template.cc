@@ -15,20 +15,10 @@ using namespace std;
 const long double PI = atan(1) * 4;
 const int MOD = 1e9+7;
 
-// personal variadic funtion
 void print(){cout << "\n";}
-template<typename T, typename...types>
-void print(const T& first, const types&...args) {cout << first << " "; print(args...);}
-
-// LCM
-int lcm(int a, int b){
-	return (a*b)/__gcd(a, b);
-}
-
-//log(a) to the base (b)
-int _log(int a, int b){
-	return log2(a)/log2(b);
-}
+template<typename T, typename...types> void print(const T& first, const types&...args) {cout << first << " "; print(args...);}
+int lcm(int a, int b){return (a*b)/__gcd(a, b);}
+int _log(int a, int b){return log2(a)/log2(b);}
 
 void solve(){
     ;
