@@ -1,17 +1,3 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <list>
-#include <array>
-#include <set>
-#include <queue>
-#include <deque>
-#include <stack>
-#include <map>
-#include <utility>
-#include <iterator>
-using namespace std;
-
 void DBG(int x) {cerr << x;}
 void DBG(long x) {cerr << x;}
 void DBG(long long x) {cerr << x;}
@@ -35,5 +21,8 @@ void DBG(const pair<T, V> &x) {cerr << '{'; DBG(x.first); cerr << ", "; DBG(x.se
 void dbg() {cerr << "]\n";}
 template <typename T, typename... V>
 void dbg(T t, V... v) {DBG(t); if (sizeof...(v)) cerr << ", "; dbg(v...);}
-
+#ifdef LAVIN_DEBUG
 #define dbg(x...) cerr << "\e[91m"<<__func__<<":"<<__LINE__<<" [" << #x << "] = ["; dbg(x); cerr << "\e[39m" << endl;
+#else
+#define dbg(x...)
+#endif
