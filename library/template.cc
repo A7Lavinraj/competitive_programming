@@ -13,7 +13,7 @@ int main() {
 	int t = 1;
 	cin >> t;
  	for (int i = 1; i <= t; i++) {
-		//cout << "Case #" << i++ << ": ";
+		//cout << "Case #" << i << ": ";
         solve();
 	}
 	return 0;
