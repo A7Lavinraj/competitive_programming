@@ -25,15 +25,6 @@ void dbg() {cerr << "]\n";}template <typename T, typename... V>void dbg(T t, V..
 #endif
 void print(){cout << "\n";}template<typename T, typename...types> void print(const T& first, const types&...args) {cout << first << " "; print(args...);}
 
-int lcs(string &a, string &b, int m, int n ) { 
-    if (m == 0 || n == 0) 
-        return 0; 
-    if (a[m-1] == b[n-1]) 
-        return 1 + lcs(a, b, m-1, n-1); 
-    else
-        return max(lcs(a, b, m, n-1), lcs(a, b, m-1, n)); 
-} 
-
 void solve(){
 	int n;
 	string s;
@@ -49,6 +40,7 @@ void solve(){
 			}
 			else {
 				v[i][j] = max(v[i - 1][j], v[i][j - 1]);
+				//dbg(v[i][j]);
 			}
 		}
 	}
