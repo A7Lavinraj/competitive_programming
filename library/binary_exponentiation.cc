@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+const int MOD = 1e9 + 7;
 int binpow(long long base, long long power) {
     base %= MOD;
     long long res = 1;
@@ -14,5 +15,6 @@ int binpow(long long base, long long power) {
 }
 
 int main() {
-    cout << binpow(2, 3, MOD)
+    cout << binpow(2, 3);
+    return 0;
 }
