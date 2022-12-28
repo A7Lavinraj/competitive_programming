@@ -38,19 +38,6 @@ void solve(){
 	int n;
 	string s;
 	cin >> n >> s;
-	//int first = 0, second = 0, cnt = 0;
-	//string a = s.substr(0, n / 2), b = s.substr(n / 2, n);
-	//reverse(b.begin(), b.end());
-	//print(lcs(a, b, (int)a.size(), (int)b.size()));
-	// while (first < (int)a.size() && second < (int)b.size()) {
-	// 	if (a[first] == b[second]) {
-	// 		first++, second++, cnt++;
-	// 	}
-	// 	else {
-	// 		second++;
-	// 	}
-	// }
-
 	string temp = s;
 	reverse(s.begin(), s.end());
 

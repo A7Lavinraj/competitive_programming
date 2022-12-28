@@ -8,43 +8,6 @@ void solve(){
 	string s;
 	cin >> n >> k >> s;
 	
-	/*
-	int mx = -1, low = 0;
-	for (int i = n - 1; i >= 0; i--) {
-		if (s[i] == '1') {
-			int temp = i, cnt = 0;
-			for (int j = temp; j >= 0; j--) {
-				if (s[j] == '1') {
-					cnt++;
-					i = j - 1;
-					mx = max(cnt, mx);
-				}
-				else {
-					if (mx < cnt) {
-						low = temp;
-					}
-					break;
-				}
-			}
-		}
-	}
-
-	int need = k - mx, ans = 0;
-
-	for (int i = low; i >= 0 && need; i--, need--) {
-		if (s[i] == '1') {
-			ans++;
-		}
-	}
-
-	if (mx >= k) {
-		print(0);
-		return;
-	}
-	else {
-		print(mx == 0 ? 1 : ans + 1);
-	}
-	*/
 	vector<int> v(n);
 	int cnt = 0, ans = INT_MAX;
 
