@@ -1,6 +1,4 @@
-#include <iostream>
-using namespace std;
-
+#ifdef RECB
 void DBG(int x) {cerr << x;}
 void DBG(long x) {cerr << x;}
 void DBG(long long x) {cerr << x;}
@@ -19,8 +17,5 @@ template<typename T, typename V>void DBG(const pair<T, V> &x);
 template<typename T>void DBG(const T &x) {int f = 0; cerr << '{'; for (auto &i: x) cerr << (f++ ? ", " : ""), DBG(i); cerr << "}";}
 template<typename T, typename V>void DBG(const pair<T, V> &x) {cerr << '{'; DBG(x.first); cerr << ", "; DBG(x.second); cerr << '}';}
 void dbg() {cerr << "]\n";}template <typename T, typename... V>void dbg(T t, V... v) {DBG(t); if (sizeof...(v)) cerr << ", "; dbg(v...);}
-#ifdef RECB
 #define dbg(x...) cerr << "\e[91m"<<__func__<<":"<<__LINE__<<" [" << #x << "] = ["; dbg(x); cerr << "\e[39m" << endl;
-#else
-#define dbg(x...)
 #endif
